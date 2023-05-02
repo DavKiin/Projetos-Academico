@@ -1,10 +1,10 @@
-Projeto consiste em um CHAT feito em Socket para multiplas conversas.
+Projeto consiste em um CHAT feito em Socket para comnicação por texto.
 ===================================================================================================
 Para iniciar os projetos segue instruções, entrar na IDE de preferencia e executar os arquivos [SERVER.JAVA] para iniciar o servidor e [LOGIN.JAVA] para iniciar o client. 
-possível abri multiplos clientes simultaneamente aprovando o funcionaamento.
+possível abri multiplos clients simultaneamente aprovando o funcionamento.
 
 ===================================================================================================
-NA tela de login é necessario que seja informado 
+Na tela de login é necessario que seja informado 
 Nickname/Apelido
 PORT
 ===================================================================================================
