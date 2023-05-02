@@ -1,7 +1,6 @@
 package client;
 
 import common.InitHUD;
-import common.UpdateList;
 import common.Utils;
 import java.awt.Color;
 import java.awt.Dimension;
