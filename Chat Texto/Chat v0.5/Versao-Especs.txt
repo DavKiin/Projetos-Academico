@@ -1,0 +1,14 @@
+Versão ALPHA v0.5 Chat em Socket.
+
+Features implementadas no processo de criação da versão alpha do chat de texto. 
+Features:
+- Criação do Server e ServerThread.
+- Criação do Client e ClientThread.
+- Interface Grafica Beta. 
+- Lista de contatos. 
+- Chat entre Clients
+- Login
+  - Usuario
+  - Porta (PORT)
+- Homepage
+- Chat.
