@@ -1,0 +1,7 @@
+Versão ALPHA v0.6 Chat em Socket.
+
+Features implementadas no processo de criação da versão alpha do chat de texto. 
+Features:
+- Code de atualização da lista automatica. Implantação na Homepage.
+- Definição do tempo de atualização da pagina.
+- Teste de atualização.
