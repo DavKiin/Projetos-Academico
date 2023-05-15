@@ -1,0 +1,19 @@
+Versão ALPHA v0.7 Chat em Socket.
+
+Features implementadas no processo de criação da versão alpha do chat de texto. 
+Features:
+- Randomizer: objetivo escolher a porta automaticamente sem a necessidade do usuario coloca-la. 
+- Integração do randomizador ao processo de login.
+- Remoção do campo Port, anteriormente usado para definir porta manual.
+- Definição de mensagens de aviso e Excessões.
+
+-----------====Teste====-----------
+Randomizador: 
+Criação de portas;
+Definição de usuario;
+Verificação do range de portas.
+
+Integração e Excessões
+- Compilação: Tempo medio de resposta reduzido;
+- Excessões de erro de login;
+- PopUp de erro em caso de porta utilizada.
