@@ -1,0 +1,19 @@
+=======================[ATUALIZACAO: Versao ALPHA v0.75]=======================
+
+Features:
+- Implementacao da Classe "ArchiveUtils", responsavel por escrita e leitura de 
+arquivos de texto.
+        - Implementado funcao de escrita;
+        - implementado funcao de leitura;
+        - Criado diretorio UPDATE e LOG em "lib";
+        - Integracao dos metodos ao login.
+- Criacao da mensagem de atualizacoes antes de iniciar o login.
+- Otimizacao do codigo.
+        - Retirado excedentes, visando melhor utilizacao.
+
+Features em implantacao:
+- Mensagens de ERRO expressas ena tela.
+- Adequacao dos erros, padronizacao e criacao do arquivo de log.
+
+Teste:
+Teste de implementacao da funcao de Painel de atualizacoes.
