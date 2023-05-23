@@ -5,7 +5,7 @@ possível abri multiplos clientes simultaneamente aprovando o funcionaamento.
 
 ===================================================================================================
 Na tela de login é necessario que seja informado 
-Nickname/Apelido
+Nickname/Apelido.
 ===================================================================================================
 Após sera direcionado a tela de login que indicara uma lista de contatos ativos 
 
