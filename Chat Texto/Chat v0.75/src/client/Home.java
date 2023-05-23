@@ -175,7 +175,7 @@ public class Home extends InitHUD {
             }
 
         }
-        lista.setListData(userConectados.toArray());
+        lista.setListData(userConectados.toArray());  
     }
         //abrir um chat 
     private void openChat() {
