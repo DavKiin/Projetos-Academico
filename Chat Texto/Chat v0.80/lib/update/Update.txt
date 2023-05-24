@@ -9,7 +9,9 @@ Interface v0.2
                 - Painel de atualizacoes;
                 - Painel de Login;
                 - Definicao das cores.
-
+        - Diretorios de "User Interface" 
+                - "Login", "Home" e "Chat"
+                
 [TELA home] - Nao iniciando.
 [Chats] - Nao iniciado. 
 
