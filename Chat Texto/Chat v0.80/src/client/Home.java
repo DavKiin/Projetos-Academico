@@ -16,9 +16,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 import javax.swing.*;
 
-
-
-
 public class Home extends InitHUD {
 
     private JLabel title;

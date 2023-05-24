@@ -1,65 +1,88 @@
 package client;
 
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.TextArea;
+import java.io.IOException;
+import java.net.Socket;
+import java.util.concurrent.ThreadLocalRandom;
+import javax.swing.*;
 import common.ArchiveUtils;
 import common.InitHUD;
 import common.Utils;
 import server.Server;
-import java.io.IOException;
-import java.net.Socket;
-import java.util.concurrent.ThreadLocalRandom;
-import java.awt.*;
-import javax.swing.*;
 
 public class Login extends InitHUD {
 
     private JButton jbLoogin; // botao de login
-    private JLabel jlUser, jlPort, title; // labels visuais
-    private JTextField jtUser, jtPort; // zona de texto com infos
-    
+    private JLabel title, att; // labels visuais
+    private JTextField jtUser, jtPort; // zona de texto com informações de login
+    private TextArea attArea; //Area de Texto das atualizações
+    private JPanel leftPanel, rightPanel, line; //Paineis
+    private Font font = title.getFont();
+    private Font FONT = font.deriveFont(Font.BOLD, font.getSize() + 20f);
+
     public Login() {
         super("Login");
     }
 
     protected void initComponents() {
-        title = new JLabel("CHAT", SwingConstants.CENTER);
+        title = new JLabel("FAZ CHAT");
+        att = new JLabel("Beta v0.80");
         jbLoogin = new JButton("Entrar");
-        jlUser = new JLabel("Apelido", SwingConstants.CENTER);
-        jlPort = new JLabel("Porta", SwingConstants.CENTER);
         jtUser = new JTextField();
         jtPort = new JTextField();
+        attArea = new TextArea();
+        leftPanel = new JPanel();
+        rightPanel = new JPanel();
+        line = new JPanel();
     }
 
     @Override
     protected void configComponents() {
+        //Jframe
         this.setLayout(null); 
-        this.setMinimumSize(new Dimension(400, 450));
+        this.setMinimumSize(new Dimension(700, 450));
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.getContentPane().setBackground(Color.WHITE);
-        
+        //Background
+            // Painel Esquerda 
+        leftPanel.setBounds(0,0,250,450);
+        leftPanel.setBackground(Color.decode("#D4D9D9"));
+            // Painel Direita
+        rightPanel.setBounds(252,0,450,450);
+        rightPanel.setBackground(Color.decode("#F7FCFC"));
+            //Line
+        line.setBounds(250,0,2,450);
+        line.setBackground(Color.GRAY);
+        //Titulos
             //titulo grafico exibido em tela
-        title.setBounds(15,10,350,200);
-        ImageIcon logo = new ImageIcon("../assets/Logo_Chat.png");
-        title.setIcon(new ImageIcon(logo.getImage().getScaledInstance(375, 100, Image.SCALE_SMOOTH)));
+        title.setFont(FONT); 
+        title.setBounds(20,220,70,24);
             // Botão de login exibido em tela
-        jbLoogin.setBounds(15,320,350,40);
+        jbLoogin.setBounds(160,290,70,24);
             //Botão e caixa de usuario
-        jlUser.setBounds(15,220,100,40);
-        jlUser.setBorder(BorderFactory.createLineBorder(Color.GRAY));   
-        jtUser.setBounds(120,220,250,40);
+        jtUser.setBounds(15,250,220,30);
+            //Label de versão.
+        att.setFont(FONT);
+        att.setBounds(620,390,70,24);
     }
 
     @Override
     protected void insertComponents() {
         this.add(title);
+        this.add(att);
         this.add(jbLoogin);
-        this.add(jlPort);
-        this.add(jlUser);
         this.add(jtPort);
         this.add(jtUser);
+        this.add(attArea); 
+        this.add(leftPanel);
+        this.add(rightPanel); 
+        this.add(line);
     }
 
-    
     @Override
     protected void insertActions() {
             //Tela com update
@@ -78,10 +101,8 @@ public class Login extends InitHUD {
             try {
                 String nick = jtUser.getText(); // nickname do usuario
                 int port = Integer.parseInt(jtPort.getText()); // porta pertencente ao usuario
-                
+                    //Jtext de inserção de usuario
                 jtUser.setText("");
-                
-
                     //iniciando socket client
                 coneS = new Socket(Server.HOST, Server.PORT);
                 String conecInfo = nick + ":" + coneS.getLocalAddress().getHostAddress() + ":" + port;
@@ -100,17 +121,12 @@ public class Login extends InitHUD {
         });
     }
 
-
     @Override
     protected void start() {
         this.pack();
         this.setVisible(true);
     }
-
     public static void main(String[] args) {
-        
         Login login = new Login();
-    
     }
-
 }

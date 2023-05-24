@@ -1,3 +1,14 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\Projetos\\javalibs\\openjfx-20.0.1_windows-x64_bin-sdk\\javafx-sdk-20.0.1\\lib\\javafx.base.jar",
+        "d:\\Projetos\\javalibs\\openjfx-20.0.1_windows-x64_bin-sdk\\javafx-sdk-20.0.1\\lib\\javafx.controls.jar",
+        "d:\\Projetos\\javalibs\\openjfx-20.0.1_windows-x64_bin-sdk\\javafx-sdk-20.0.1\\lib\\javafx.fxml.jar",
+        "d:\\Projetos\\javalibs\\openjfx-20.0.1_windows-x64_bin-sdk\\javafx-sdk-20.0.1\\lib\\javafx.graphics.jar",
+        "d:\\Projetos\\javalibs\\openjfx-20.0.1_windows-x64_bin-sdk\\javafx-sdk-20.0.1\\lib\\javafx.media.jar",
+        "d:\\Projetos\\javalibs\\openjfx-20.0.1_windows-x64_bin-sdk\\javafx-sdk-20.0.1\\lib\\javafx.swing.jar",
+        "d:\\Projetos\\javalibs\\openjfx-20.0.1_windows-x64_bin-sdk\\javafx-sdk-20.0.1\\lib\\javafx.web.jar",
+        "d:\\Projetos\\javalibs\\openjfx-20.0.1_windows-x64_bin-sdk\\javafx-sdk-20.0.1\\lib\\javafx-swt.jar"
+    ]
 }

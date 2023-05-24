@@ -1,19 +1,17 @@
-=======================[ATUALIZACAO: Versao ALPHA v0.75]=======================
-
-Features:
-- Implementacao da Classe "ArchiveUtils", responsavel por escrita e leitura de 
-arquivos de texto.
-        - Implementado funcao de escrita;
-        - implementado funcao de leitura;
-        - Criado diretorio UPDATE e LOG em "lib";
-        - Integracao dos metodos ao login.
-- Criacao da mensagem de atualizacoes antes de iniciar o login.
-- Otimizacao do codigo.
-        - Retirado excedentes, visando melhor utilizacao.
+=======================[ATUALIZACAO: Versao ALPHA v0.80]=======================
 
 Features em implantacao:
-- Mensagens de ERRO expressas ena tela.
-- Adequacao dos erros, padronizacao e criacao do arquivo de log.
+Interface v0.2 
+
+[TELA de Login]
+        - Janela redimensionada
+        - Divisão da Tela. [Em progresso]
+                - Painel de atualizacoes;
+                - Painel de Login;
+                - Definicao das cores.
+
+[TELA home] - Nao iniciando.
+[Chats] - Nao iniciado. 
 
 Teste:
-Teste de implementacao da funcao de Painel de atualizacoes.
+[N/A]
