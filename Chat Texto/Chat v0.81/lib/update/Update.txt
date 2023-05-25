@@ -1,12 +1,14 @@
-                [ATUALIZACAO: Versao ALPHA v0.85]
+                [ATUALIZACAO: Versao ALPHA v0.81]
 
 Features em implantacao:
-Interface v0.2 
+Interface v0.21 
 
 [TELA de Login]
         - Janela redimensionada
         - Divisao da Tela. [Em progresso]
                 - Painel de atualizacoes;
+                        . Posto caminho do arquivo de Texto;
+                        . Expresso na tela de Login.
                 - Painel de Login;
                 - Definicao das cores.
         - Diretorios de "User Interface" 
@@ -18,3 +20,14 @@ Interface v0.2
 
 Teste:
 [N/A]
+
+
+
+
+
+
+
+
+
+
+A

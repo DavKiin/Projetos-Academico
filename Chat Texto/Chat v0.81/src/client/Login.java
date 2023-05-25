@@ -2,8 +2,6 @@ package client;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.TextArea;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.concurrent.ThreadLocalRandom;
@@ -16,28 +14,28 @@ import server.Server;
 public class Login extends InitHUD {
 
     private JButton jbLoogin; // botao de login
-    private JLabel title, att; // labels visuais
+    private JLabel title, att, titleAtt, attFazChat; // labels visuais
     private JTextField jtUser, jtPort; // zona de texto com informações de login
-    private TextArea attArea; //Area de Texto das atualizações
+    private JTextArea attArea; //Area de Texto das atualizações
     private JPanel leftPanel, rightPanel, line; //Paineis
-    private Font font = title.getFont();
-    private Font FONT = font.deriveFont(Font.BOLD, font.getSize() + 20f);
 
-    String read = ArchiveUtils.ReadArchive("D:/Projetos/Projetos Academico/Chat Texto/Chat v0.80/lib/update/Update.txt");
     public Login() {
         super("Login");
     }
 
     protected void initComponents() {
         title = new JLabel("FAZ CHAT");
-        att = new JLabel("Beta v0.80");
+        titleAtt = new JLabel("ATUALIZAÇÕES");
+        att = new JLabel("Beta v0.81");
+        attFazChat = new JLabel("Faz Chat Ltda. 2023");
         jbLoogin = new JButton("Entrar");
         jtUser = new JTextField();
         jtPort = new JTextField();
-        attArea = new TextArea(ArchiveUtils.ReadArchive("D:/Projetos/Projetos Academico/Chat Texto/Chat v0.80/lib/update/Update.txt"));
-        leftPanel = new JPanel();
+        attArea = new JTextArea(ArchiveUtils.ReadArchive("D:/Projetos/Projetos Academico/Chat Texto/Chat v0.81/lib/update/Update.txt"));
+        leftPanel = new JPanel();   
         rightPanel = new JPanel();
         line = new JPanel();
+
     }
 
     @Override
@@ -60,21 +58,26 @@ public class Login extends InitHUD {
         line.setBackground(Color.GRAY);
         //Titulos
             //titulo grafico exibido em tela
-        title.setFont(FONT); 
         title.setBounds(20,220,70,24);
+            //Titulo Atualizações
+        titleAtt.setBounds(426, 40, 100,24);
             // Botão de login exibido em tela
         jbLoogin.setBounds(160,290,70,24);
             //Botão e caixa de usuario
         jtUser.setBounds(15,250,220,30);
-            //Label de versão Updates que são esperados.
-        att.setFont(FONT);
+            //Label de versão, Updatees da versão.
         att.setBounds(620,390,70,24);
         attArea.setBounds(264,70,410,320);
         attArea.setEditable(false);
+        attArea.setLineWrap(true);
+        attArea.setBorder(BorderFactory.createLineBorder(Color.GRAY));
+        attFazChat.setBounds(260, 390, 150,24);   
     }
 
     @Override
     protected void insertComponents() {
+        this.add(titleAtt);
+        this.add(attFazChat);
         this.add(title);
         this.add(att);
         this.add(jbLoogin);
