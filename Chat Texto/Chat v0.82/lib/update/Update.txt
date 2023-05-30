@@ -1,0 +1,24 @@
+
+            [BETA v0.82]
+
+ Features:
+    [GUI]
+    - Novo Design Tela Login. 
+    - Novo Design Tela Home.
+
+    [Melhorias]    
+    - Melhoria da GUI.
+        - Incluido atualizacoes na aba home;
+        - Layout de botoes, abas e textos;
+        - Inclusao de novas opcoes de fonte;
+        - Funcao de lista de usuarios atualizada.
+
+    - Limpeza de Codigo.
+        Códigos desnecessarios foram retificados;
+        Funcoes Concatenadas;
+
+    - Exceptions
+        Definido novas Excessoes.
+
+    - Atualizacao da lista
+        - Definido tempo de atualizacao para 3 segundos.
