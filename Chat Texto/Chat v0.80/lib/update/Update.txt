@@ -1,4 +1,4 @@
-                [ATUALIZACAO: Versao ALPHA v0.85]
+                [ATUALIZACAO: Versao ALPHA v0.80]
 
 Features em implantacao:
 Interface v0.2 
